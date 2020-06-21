@@ -7,7 +7,7 @@ data.
 
 # Version 1
 Updated: Jun 22, 2:00 AM
-# What you and your partners will build
+# What you and your partners will build in class
 
 ## 1. Project Structure
 Create a new react app inside a directory with your team name as the app name. You can search how to start a new react app using the follwoing keywords.
@@ -44,3 +44,12 @@ Add a universal footer that includes:
 
 - you can style the components yourself, import the stylesheet from JavaScript, not in HTML
 - Optionally: you can use react-bootstrap library. Search on how to install it and get started using it
+
+# Homework
+- Style the navbar and search box
+- Add simple functionality to the search box. Whenever you type something, the text inside the input should be logged to the console.
+- The same should happen when you hit enter
+
+### Search Keywords:
+- How to handle text input change in react
+- How to handle form submission in react
