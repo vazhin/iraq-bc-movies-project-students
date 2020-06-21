@@ -10,12 +10,15 @@ Updated: Jun 22, 2:00 AM
 # What you and your partners will build
 
 ## 1. Project Structure
-Create a new react app in the empty dirctory. You can search how to start a new react app in the current directory. Make sure to rename the `README.md` file back after you create the react app.
+Create a new react app inside a directory with your team name as the app name. You can search how to start a new react app using the follwoing keywords.
 
 ### Keywords:
 - create-react-app
 - npx
-- current directory
+
+### Make sure to:
+- Add node_modules to `.gitignore`
+- the root directory contains only a directory with your team name and this `README.md` file
 ---
 ## 2. Homepage
 
