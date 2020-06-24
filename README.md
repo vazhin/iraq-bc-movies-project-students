@@ -81,6 +81,9 @@ https://developers.themoviedb.org/3/search/search-movies
 - Fetch the categories and put them inside a dropdown inside the NavBar
 - when you change categories from the dropdown it should fetch the popular movies in that category
 
+### Styling
+feel free to style the movies list but we suggest making it as a grid and each movie has the poster and title under it, maybe call effect when hovering or something or hide the title and show it when hovering, don't know be creative with it
+
 ### Search Keywords
 - Events in react
 - Events with state
