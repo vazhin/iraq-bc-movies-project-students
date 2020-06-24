@@ -12,6 +12,8 @@ Updated Jun 24, 4:30 pm
 
 ### What to do in class
 
+- Add a Spinner component to the Navbar component and make it invisible by default also pass a function called `onSearch` to the SearchBox and then when you type some text inside the SearchBox component, call it to make the spinner in the Navbar component appears. You can use spinners from here https://react-bootstrap.github.io/components/spinners/
+
 - use this function to fetch and don’t change it, the `path` is basically whatever your are requesting after the `TMDB_BASE_URL` like `/movies/popular`
 
 ```jsx
