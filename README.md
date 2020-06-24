@@ -12,7 +12,7 @@ Updated Jun 24, 4:30 pm
 
 ### What to do in class
 
-- use this function to fetch and don’t change it, the `path` is basically whatever your are requesting after the `TMDB_BASE_URL` like `/movies/popular`
+- you have these urls to use
 
 ```jsx
 const API_KEY = "api_key=542003918769df50083a13c415bbc602&";
