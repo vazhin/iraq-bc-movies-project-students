@@ -12,7 +12,7 @@ Updated Jun 24, 4:30 pm
 
 ### What to do in class
 
-- you have these urls to use
+- you have this function to use, don't change it
 
 ```jsx
 const constructUrl = (path, query) => {
