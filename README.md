@@ -15,15 +15,17 @@ Updated Jun 24, 4:30 pm
 - you have these urls to use
 
 ```jsx
-const API_KEY = "api_key=542003918769df50083a13c415bbc602&";
-const BASE_URL = `https://api.themoviedb.org/3/`;
-const SEARCH_URL = BASE_URL + `search/movie?${API_KEY}query=${query}`;
+const constructUrl = (path, query) => {
+	return `${TMDB_BASE_URL}/${path}?api_key=${atob(
+	 "ZDJmYTdhZDFlMjZhZjA4NDdkMzQ5ZDdkYmQ1ZjkzZTU="
+	)}&query=${query}`;
+};
 ```
 
 - checkout this for more info about the search api endpoint
   https://developers.themoviedb.org/3/search/search-movies
 
-- Implement the SearchBox component to search for the input using the `constructUrl` function passing it the search path, and then return the results into the main component using a handler function. the function should be passed as a prop to the SearchBox.
+- Implement the SearchBox component to search for the input using the `constructUrl` function passing it the search path and query, and then return the results into the main component using a handler function. the function should be passed as a prop to the SearchBox.
 - Send the movies response from the main component to another component that will render the movies and lets call it MoviesGrid.
 - In the MoviesGrid map each movie to another component called MovieItem.
 
