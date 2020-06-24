@@ -58,8 +58,9 @@ Add a universal footer that includes:
 # Version 2
 
 ### What to do in class
-- use this function with the fetching and don’t change it
+- use this function with the fetching and don’t change it, the `path` is basically whatever your are requesting after the `TMDB_BASE_URL` like `/movies/popular`
 ```jsx 
+const TMDB_BASE_URL = "https://api.themoviedb.org/3";
 const constructUrl = (path) => {
 	return `${TMDB_BASE_URL}/${path}?api_key=${atob(
 	 "ZDJmYTdhZDFlMjZhZjA4NDdkMzQ5ZDdkYmQ1ZjkzZTU="
