@@ -53,3 +53,34 @@ Add a universal footer that includes:
 ### Search Keywords:
 - How to handle text input change in react
 - How to handle form submission in react
+
+
+# Version 2
+
+### What to do in class
+- use this function with the fetching and don’t change it
+```jsx 
+const constructUrl = (path) => {
+	return `${TMDB_BASE_URL}/${path}?api_key=${atob(
+	 "ZDJmYTdhZDFlMjZhZjA4NDdkMzQ5ZDdkYmQ1ZjkzZTU="
+	)}`;
+};
+```
+
+- checkout this for more info about the search api endpoint
+https://developers.themoviedb.org/3/search/search-movies
+
+- You should send query as props to the main component which will have a function that fetches the movies based on that query that you get from the search box in the NavBar
+- Send the movies response to another component that will render the movies and lets call it MoviesComponent
+- In the MoviesComponent map each movie to another component called MovieItem
+
+
+ ### Homework
+- Go to the TMDB documentations and see how you can get all the genres (the categories) and how to get popular movies in this category
+- Fetch the categories and put them inside a dropdown inside the NavBar
+- when you change categories from the dropdown it should fetch the popular movies in that category
+
+### Search Keywords
+- Events in react
+- Events with state
+- handling Forms in react
