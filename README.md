@@ -15,12 +15,9 @@ Updated Jun 24, 4:30 pm
 - use this function to fetch and don’t change it, the `path` is basically whatever your are requesting after the `TMDB_BASE_URL` like `/movies/popular`
 
 ```jsx
-const TMDB_BASE_URL = "https://api.themoviedb.org/3";
-const constructUrl = (path) => {
-  return `${TMDB_BASE_URL}/${path}?api_key=${atob(
-    "ZDJmYTdhZDFlMjZhZjA4NDdkMzQ5ZDdkYmQ1ZjkzZTU="
-  )}`;
-};
+const API_KEY = "api_key=542003918769df50083a13c415bbc602&";
+const BASE_URL = `https://api.themoviedb.org/3/`;
+const SEARCH_URL = BASE_URL + `search/movie?${API_KEY}query=${query}`;
 ```
 
 - checkout this for more info about the search api endpoint
