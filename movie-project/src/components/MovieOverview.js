@@ -14,7 +14,7 @@ export default function MovieOverview({show, handleClose, overview, title, imgUr
         <Modal.Body className='d-flex justify-content-center align-items-center movie-overview-modal-body'>
           <Card.Img variant="top" src={imgUrl} className='p-3 movie-overview-img' style={{width: '200px'}} />
           <div className='movie-overview-text' style={{padding: '3rem'}}>
-          <Card.Text className='mb-4' style={{fontSize: '1.8rem'}}>Overview</Card.Text>
+          <Card.Text className='mb-4 text-primary' style={{fontSize: '1.8rem'}}>Overview</Card.Text>
           <Card.Text>{overview}</Card.Text>
           </div>
         </Modal.Body>
