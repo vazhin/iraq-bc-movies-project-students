@@ -6,21 +6,22 @@ export default function MovieItem(props) {
   return (
     <li>
       <Card
-        style={{ width: "17rem" }}
-        className="align-items-center justify-content-center m-2"
+        style={{ width: "18rem", border: 'none'}}
+        className="align-items-center justify-content-center m-5 shadow-sm"
       >
         <Card.Img variant="top" src={imageBaseUrl + props.movie.poster_path} />
-        <Card.Body>
-          <Card.Title>{props.movie.title}</Card.Title>
+        <Card.Body className='w-100'>
+          <Card.Title style={{fontSize: '1.6rem'}}>{props.movie.title}</Card.Title>
+          <Card.Text>{findGenresToRender(props.movie.genre_ids, props.genresList)}</Card.Text>
+
+
           <Card.Text>
-            Genre:
-            {findGenresToRender(props.movie.genre_ids, props.genresList)}
+          <Badge variant="warning" style={{fontSize: '0.85rem'}} className="mr-2">Rating {props.movie.vote_average}</Badge>
+          <Badge variant="primary" style={{fontSize: '0.85rem'}}>{formatDate(props.movie.release_date)}</Badge>
           </Card.Text>
-          <Card.Text>Rating: {props.movie.vote_average}</Card.Text>
-          <Card.Text>
-            Initial release: {formatDate(props.movie.release_date)}
-          </Card.Text>
-          <Button variant="info">Learn more</Button>
+
+
+          <Button variant="light" className='bg-white' style={{border: '1px solid rgba(0,0,0,.125)'}}>Learn more</Button>
         </Card.Body>
       </Card>
     </li>
@@ -32,7 +33,7 @@ function findGenresToRender(movieGenreIds, genresList) {
     let theGenre = genresList.find(item => item.id === genreId);
     if (theGenre) {
       return (
-        <Badge className="ml-1" variant="secondary" key={`${genreId}`}>
+        <Badge className="mr-1" variant="light" key={`${genreId}`} style={{fontSize: '0.85rem'}}>
           {theGenre.name}
         </Badge>
       );
