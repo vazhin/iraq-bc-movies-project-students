@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/iraq-bc-movies-project-students/static/css/main.f0a60877.chunk.css",
-    "main.js": "/iraq-bc-movies-project-students/static/js/main.a0013511.chunk.js",
-    "main.js.map": "/iraq-bc-movies-project-students/static/js/main.a0013511.chunk.js.map",
+    "main.css": "/iraq-bc-movies-project-students/static/css/main.00b370de.chunk.css",
+    "main.js": "/iraq-bc-movies-project-students/static/js/main.2107a418.chunk.js",
+    "main.js.map": "/iraq-bc-movies-project-students/static/js/main.2107a418.chunk.js.map",
     "runtime-main.js": "/iraq-bc-movies-project-students/static/js/runtime-main.c1ab1dfd.js",
     "runtime-main.js.map": "/iraq-bc-movies-project-students/static/js/runtime-main.c1ab1dfd.js.map",
     "static/css/2.0e1a4c73.chunk.css": "/iraq-bc-movies-project-students/static/css/2.0e1a4c73.chunk.css",
     "static/js/2.b7add91d.chunk.js": "/iraq-bc-movies-project-students/static/js/2.b7add91d.chunk.js",
     "static/js/2.b7add91d.chunk.js.map": "/iraq-bc-movies-project-students/static/js/2.b7add91d.chunk.js.map",
     "index.html": "/iraq-bc-movies-project-students/index.html",
-    "precache-manifest.31d3568e1375ac709e4e4d468915d80b.js": "/iraq-bc-movies-project-students/precache-manifest.31d3568e1375ac709e4e4d468915d80b.js",
+    "precache-manifest.a6942b272ffa1a88f6c93d84ad129ac0.js": "/iraq-bc-movies-project-students/precache-manifest.a6942b272ffa1a88f6c93d84ad129ac0.js",
     "service-worker.js": "/iraq-bc-movies-project-students/service-worker.js",
     "static/css/2.0e1a4c73.chunk.css.map": "/iraq-bc-movies-project-students/static/css/2.0e1a4c73.chunk.css.map",
-    "static/css/main.f0a60877.chunk.css.map": "/iraq-bc-movies-project-students/static/css/main.f0a60877.chunk.css.map",
+    "static/css/main.00b370de.chunk.css.map": "/iraq-bc-movies-project-students/static/css/main.00b370de.chunk.css.map",
     "static/js/2.b7add91d.chunk.js.LICENSE.txt": "/iraq-bc-movies-project-students/static/js/2.b7add91d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c1ab1dfd.js",
     "static/css/2.0e1a4c73.chunk.css",
     "static/js/2.b7add91d.chunk.js",
-    "static/css/main.f0a60877.chunk.css",
-    "static/js/main.a0013511.chunk.js"
+    "static/css/main.00b370de.chunk.css",
+    "static/js/main.2107a418.chunk.js"
   ]
 }
