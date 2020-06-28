@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,13 +42,15 @@
   width: 100% !important;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
   .movie-overview-modal-body {
     flex-direction: column !important;
   }
+
   .movie-overview-img {
     display: none;
   }
+
   .movie-overview-text {
     padding: 0.5rem !important;
   }

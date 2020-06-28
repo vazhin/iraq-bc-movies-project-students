@@ -10,7 +10,7 @@ export default function MyNavbar(props) {
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home" className="text-warning ">
           <MdMovieFilter size="2.5rem" className='text-primary' />
-          <span className="text-info display-3 text-dark" style={{fontSize: '1.7rem'}}> movies</span>
+          <span className="text-info display-3 text-dark" style={{ fontSize: '1.7rem' }}> movies</span>
         </Navbar.Brand>
         <GenreSelector
           handleMovies={props.handleMovies}
