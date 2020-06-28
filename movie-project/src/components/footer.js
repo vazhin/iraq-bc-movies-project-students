@@ -52,16 +52,12 @@ export default function Myfooter() {
 }
 
 const footer = {
-  backgroundColor: "#D5D8DC",
-  color: "#808B96 ",
-  fontSize: "12px",
-  borderTop: "1px solid #E7E7E7",
+  backgroundColor: 'rgb(240,240,240)',
+  fontSize: "0.8rem",
   textAlign: "center",
-  padding: "",
   position: "fixed",
   left: "0",
   bottom: "0",
-  height: "",
   width: "100%"
 };
 

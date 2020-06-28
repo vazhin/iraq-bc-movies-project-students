@@ -37,7 +37,7 @@ export default function SearchBox(props) {
           value={props.query}
           onChange={onSearch}
         />
-        <Button type="submit" variant="outline-info" className="m-1">
+        <Button type="submit" variant="outline-primary" className="m-1">
           Search
         </Button>
       </Form>
