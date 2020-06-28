@@ -9,12 +9,12 @@ export default function MovieItem(props) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true)
   let imgUrl = imageBaseUrl + props.movie.poster_path
-  
+
   return (
     <li className='m-5 tilt-in-top-1'>
       <Card
         style={{ width: "18rem", border: 'none' }}
-        className="align-items-center justify-content-center shadow-sm"
+        className="align-items-center justify-content-center shadow-sm movie-item"
       >
         <Card.Img variant="top" src={imgUrl} />
         <Card.Body className='w-100'>
