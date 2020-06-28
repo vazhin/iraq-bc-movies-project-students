@@ -5,8 +5,8 @@ export default function MoviesGrid(props) {
   return (
     <>
       <ul
-        style={{ listStyle: "none" }}
-        className="d-flex align-items-center justify-content-center p-2 m-5 flex-wrap "
+        style={{ listStyle: "none", padding: '0' }}
+        className="d-flex align-items-center justify-content-center flex-wrap"
       >
         {props.moviesList &&
           props.moviesList.map((movie, index) => (
