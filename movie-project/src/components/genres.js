@@ -1,5 +1,5 @@
 import { Form, Nav } from "react-bootstrap";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function GenreSelector(props) {
   const [popularMovies, setPopularMovies] = useState([]);

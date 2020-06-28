@@ -4,13 +4,14 @@ import MovieOverview from './MovieOverview'
 let imageBaseUrl = "https://image.tmdb.org/t/p/w500";
 
 export default function MovieItem(props) {
-  const [show, setShow] = useState(false);
 
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true)
   let imgUrl = imageBaseUrl + props.movie.poster_path
+  
   return (
-    <li className='m-5'>
+    <li className='m-5 tilt-in-top-1'>
       <Card
         style={{ width: "18rem", border: 'none' }}
         className="align-items-center justify-content-center shadow-sm"

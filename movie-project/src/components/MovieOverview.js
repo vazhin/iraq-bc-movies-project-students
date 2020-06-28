@@ -6,7 +6,7 @@ export default function MovieOverview({ show, handleClose, overview, title, imgU
   return (
     <Modal show={show} onHide={handleClose} size="lg"
       aria-labelledby="contained-modal-title-vcenter"
-      className='movie-overview-modal'
+      className='movie-overview-modal scale-up-center'
       centered>
       <Modal.Header closeButton>
         <Modal.Title>{title}</Modal.Title>
