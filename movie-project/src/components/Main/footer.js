@@ -1,14 +1,18 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHeart } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Myfooter() {
   return (
-    <div className="p-4 main-footer" style={footer}>
+    <div className="py-3" style={footer}>
       <Container>
+        <Row className="mb-3">
+          <Col className="text-dark">
+            Made with <FaHeart /> by :
+          </Col>
+        </Row>
         <Row>
           <Col className="text-dark">
-            Made By our team :
             <a
               className="m-2 text-dark"
               href="https://github.com/Hewr-Srood"
@@ -52,12 +56,9 @@ export default function Myfooter() {
 }
 
 const footer = {
-  backgroundColor: 'rgb(240,240,240)',
-  fontSize: "0.8rem",
+  backgroundColor: "#F0F0F0",
+  fontSize: "0.82rem",
   textAlign: "center",
-  position: "fixed",
-  left: "0",
-  bottom: "0",
   width: "100%"
 };
 

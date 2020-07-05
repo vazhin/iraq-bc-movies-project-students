@@ -1,58 +1,23 @@
-import React, { useState } from "react";
-import "./styles.css";
-import MyNavbar from "./components/navbar";
+import React from "react";
+import MyNavbar from "./components/Navbar/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Myfooter from "./components/footer";
-import Main from "./components/main";
-let TMDB_BASE_URL = "https://api.themoviedb.org/3";
+import Main from "./components/Main/main";
+import MoviePage from "./components/MoviePage/MoviePage";
+import ActorPage from "./components/ActorPage/ActorPage";
+import { Route, Switch } from "react-router-dom";
+import SearchResult from "./components/Navbar/searchResult";
+import { MovieProvider } from "./StateProvider";
 
-const constructUrl = (path, query) => {
-  return `${TMDB_BASE_URL}/${path}?api_key=${atob(
-    "ZDJmYTdhZDFlMjZhZjA4NDdkMzQ5ZDdkYmQ1ZjkzZTU="
-  )}&query=${query}`;
-};
-
-function App() {
-  const [moviesList, setMoviesList] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [query, setQuery] = useState("");
-  const [genresList, setGenresList] = useState([]);
-
-  function handleMovies(movies) {
-    setMoviesList(movies);
-  }
-
-  function handleGenresList(genres) {
-    setGenresList(genres);
-  }
-
-  function handleQuery(query) {
-    setQuery(query);
-  }
+export default function App() {
   return (
-    <>
-      <MyNavbar
-        setMoviesList={setMoviesList}
-        handleMovies={handleMovies}
-        handleGenresList={handleGenresList}
-        constructUrl={constructUrl}
-        isLoaded={isLoaded}
-        setIsLoaded={setIsLoaded}
-        genresList={genresList}
-        setGenresList={setGenresList}
-        handleQuery={handleQuery}
-        query={query}
-      />
-      <Main
-        moviesList={moviesList}
-        isLoaded={isLoaded}
-        setIsLoaded={setIsLoaded}
-        genresList={genresList}
-        query={query}
-      />
-      <Myfooter />
-    </>
+    <MovieProvider>
+      <MyNavbar />
+      <Switch>
+        <Route path="/" exact component={Main} />
+        <Route path={`/movie/:movieId`} component={MoviePage} />
+        <Route path={`/people/:castId`} component={ActorPage} />
+        <Route exact path="/search" component={SearchResult} />
+      </Switch>
+    </MovieProvider>
   );
 }
-
-export default App;
