@@ -30,7 +30,7 @@ export default function MovieCast({ movieId }) {
               maxHeight: "600px"
             }}
           >
-            <Link to={`/people/${actor.id}`}>
+            <Link to={`/iraq-bc-movies-project-students/people/${actor.id}`}>
               <img
                 className="d-block w-100 "
                 alt="cast"

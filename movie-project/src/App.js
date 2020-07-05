@@ -13,10 +13,10 @@ export default function App() {
     <MovieProvider>
       <MyNavbar />
       <Switch>
-        <Route path="/" exact component={Main} />
-        <Route path={`/movie/:movieId`} component={MoviePage} />
-        <Route path={`/people/:castId`} component={ActorPage} />
-        <Route exact path="/search" component={SearchResult} />
+        <Route path="/iraq-bc-movies-project-students/" exact component={Main} />
+        <Route path={`/iraq-bc-movies-project-students/movie/:movieId`} component={MoviePage} />
+        <Route path={`/iraq-bc-movies-project-students/people/:castId`} component={ActorPage} />
+        <Route exact path="/iraq-bc-movies-project-students/search" component={SearchResult} />
       </Switch>
     </MovieProvider>
   );

@@ -12,7 +12,7 @@ export default function SearchBox() {
         onSubmit={e => {
           e.preventDefault();
           let query = e.target.children[0].value;
-          history.push(`/search?query=${query}`);
+          history.push(`/iraq-bc-movies-project-students/search?query=${query}`);
           textInput.current.value = "";
         }}
       >
