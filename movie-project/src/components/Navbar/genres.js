@@ -22,7 +22,7 @@ export default function GenreSelector() {
         <Form.Control
           as="select"
           onChange={e => {
-            history.push("/iraq-bc-movies-project-students/");
+            history.push("/");
             let selectedGenre = Number(e.target.value);
             if (selectedGenre !== 0) {
               const filteredMovies = popularMovies.filter(movie =>

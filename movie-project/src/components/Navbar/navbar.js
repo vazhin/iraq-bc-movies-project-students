@@ -12,7 +12,7 @@ export default function MyNavbar() {
         style={{ boxShadow: "0px 3px 3px -1px rgba(240,240,240,1)" }}
       >
         <Navbar.Brand href="#home">
-          <Link to="/iraq-bc-movies-project-students/" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <div className="m-2 mr-3">
               <MdMovieFilter size="2.5rem" className="text-primary mb-1" />
               <span

@@ -12,7 +12,7 @@ export default function MovieItem({ movie }) {
   const [state] = useContext(MovieContext);
   return (
     <li className="m-5 tilt-in-top-1">
-      <Link to={`/iraq-bc-movies-project-students/movie/${movie.id}`} style={{ textDecoration: "none" }}>
+      <Link to={`/movie/${movie.id}`} style={{ textDecoration: "none" }}>
         <motion.div whileHover={{ scale: 1.08 }} whileTap={{ scale: 0.9 }}>
           <Card
             style={{ width: "17rem", border: "none" }}
